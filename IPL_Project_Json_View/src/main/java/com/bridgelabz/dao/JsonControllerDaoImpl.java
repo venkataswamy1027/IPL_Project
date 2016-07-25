@@ -5,7 +5,6 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -16,16 +15,15 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import com.bridgelabz.model.IplTeams;
 import com.bridgelabz.model.PlayerDto;
 import com.bridgelabz.model.TeamDto;
-@Repository("dd")
+@Repository
 public class JsonControllerDaoImpl implements JsonDao {
 	@Autowired
 	SessionFactory sessionFactory;
 	Session session;
 	@SuppressWarnings("unchecked")
-	public ArrayList<TeamDto>insertTeamDetails(String file,String getObject,String teaminfo1)
+	public ArrayList<TeamDto>insertTeamDetails(String teaminfo1)
 	{
 		Long count=0l;
 		session = sessionFactory.openSession();
@@ -54,7 +52,7 @@ public class JsonControllerDaoImpl implements JsonDao {
 				JSONParser parser = new JSONParser();
 				try {
 					//read JSON file data  from local repository
-					FileReader fileread = new FileReader(file);
+					FileReader fileread = new FileReader("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/"+teaminfo1+".json");
 		
 					Object obj = parser.parse(fileread);
 					JSONArray array = (JSONArray) obj;
@@ -63,7 +61,7 @@ public class JsonControllerDaoImpl implements JsonDao {
 						JSONObject jsonObject = (JSONObject) array.get(i);
 						@SuppressWarnings("unused")
 						String name = jsonObject.get("Name").toString();
-						JSONArray jsonArray = (JSONArray) jsonObject.get(getObject);
+						JSONArray jsonArray = (JSONArray) jsonObject.get(teaminfo1);
 						for (int j = 0; j < jsonArray.size(); j++) {
 							TeamDto team = new TeamDto();
 							JSONObject jsonObjectArray = (JSONObject) jsonArray.get(j);
@@ -101,8 +99,9 @@ public class JsonControllerDaoImpl implements JsonDao {
 			return null;
 	}
 	@SuppressWarnings("unchecked")
-	public ArrayList<PlayerDto> insertPlayerDetails(String fileread,String Object,String teamname1)
+	public ArrayList<PlayerDto> insertPlayerDetails(String teamname1)
 	{
+		System.out.println("player team name 2 :"+teamname1);
 		Long count=0l;
 		session = sessionFactory.openSession();
 		String hql_query="select count(teamname) from PlayerDto  as o where o.teamname=?";
@@ -131,13 +130,13 @@ public class JsonControllerDaoImpl implements JsonDao {
 	        JSONParser parser= new JSONParser();
 	        try {
         	//read JSON file data  from local repository
-        	FileReader fr = new FileReader(fileread);
+        	FileReader fr = new FileReader("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/"+teamname1+".json");
         	Object obj=parser.parse(fr);
         	JSONArray array =(JSONArray)obj;
         	for (int i = 0; i < array.size(); i++) {
 				JSONObject jsonObject=(JSONObject)array.get(i);
 				jsonObject.get("Name").toString();
-				JSONArray jsonArray=(JSONArray)jsonObject.get(Object);
+				JSONArray jsonArray=(JSONArray)jsonObject.get(teamname1);
 				for (int j = 0; j < jsonArray.size(); j++) {
 					JSONObject jsonObjectArray=(JSONObject)jsonArray.get(j);
 					player.setName(jsonObjectArray.get("player_name").toString());
@@ -177,101 +176,101 @@ public class JsonControllerDaoImpl implements JsonDao {
 			}
 			return null;
 	}
-	/*delhiDareDevils team function */
+	/*delhiDareDevils team function 
 	public ArrayList<TeamDto> delhiDareDevilsTeamList() 
 	{
 		System.out.println("delhiDareDevilsTeamList while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/DelhiDareDevilsTeam.json","DelhiDareDevilsTeamList","DelhiDareDevils");
 	}
-	/*------delhiDareDevils player function------*/
+	------delhiDareDevils player function------
 	public ArrayList<PlayerDto>delhiDareDevilsPlayerList() {
 		
 		System.out.println("delhi palyer list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/DelhiDareDevilsPlayer.json","DelhiDereDevilsPlayerList","DelhiDereDevils");
 	}
-	/*Gujrat Lions team function */ 
+	Gujrat Lions team function  
 	public ArrayList<TeamDto> gujratTeam()
 	{
 		System.out.println("gujratTeam list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/GujratTeam.json","GujratTeamList","GujratLions");
 	}
-	/*------gujrat player function------*/
+	------gujrat player function------
 	public ArrayList<PlayerDto> gujratPlayerList() 
 	{
 		System.out.println("gujarat player list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/GujratLionPlayer.json","GujratPlayerList","GujratLions");
 	}
-	/*Punjab team function */
+	Punjab team function 
 	public ArrayList<TeamDto> punjabTeam()
 	{
 		System.out.println("punjabTeam list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/PunjabTeam.json","PunjabTeamList","KingsXIPunjab");
 	}
-	/*------punjab player function------*/
+	------punjab player function------
 	public ArrayList<PlayerDto> punjabPlayerList() 
 	{
 		System.out.println("punjab player list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/punjabPlayer.json","PunjabPlayerList","KingsXIPunjab");
 	}
-	/*Kolkatta (KKR) team function */
+	Kolkatta (KKR) team function 
 	public ArrayList<TeamDto> kkrTeam() 
 	{
 		System.out.println("KKR Team list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/KKRTeam.json","KKRTeamList","KolkataKnightRiders");
 	}
-		/*------KKR player function------*/
+		------KKR player function------
 	public ArrayList<PlayerDto> kkrPlayerList() {
 			System.out.println("kolkatta player list while be display shortly");
         	return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/KKRPlayer.json","KKRPlayerList","KolkataKnightRiders");
 	}
-	/*MumbaiIndians team function */
+	MumbaiIndians team function 
 	public ArrayList<TeamDto> mumbaiIndiansTeam() 
 	{
 		System.out.println("mumbaiIndiansTeam list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/MumbaiIndians.json","MumbaiTeamList","MumbaiIndians");
 	}
-	/*------MumbaiIndians player function------*/
+	------MumbaiIndians player function------
 	public ArrayList<PlayerDto> mumbaiPlayerList() 
 	{
 		System.out.println("mumbai player list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/MumbaiPlayer.json","MumbaiPlayerList","MumbaiIndians");
 	}
-/* rising Pune team function*/
+ rising Pune team function
 	public ArrayList<TeamDto> risingPuneTeam() 
 	{
 		System.out.println("risingPuneTeam list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/RisingPune.json","PuneTeamList","RisingPuneSupergiants");
 	}
-	/*------rising pune player function------*/
+	------rising pune player function------
 	public ArrayList<PlayerDto> risingPunePlayerList()
 	{
 		System.out.println("pune player list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/RisingPunePlayer.json","PunePlayerList","RisingPuneSupergiants");
 	}
-	/* RCB team function */
+	 RCB team function 
 	public ArrayList<TeamDto> royalChallengesTeam() 
 	{
 		System.out.println("royalChallengesTeam list while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/RoyalChallenges.json","RoyalChallengeTeamList","RoyalChallengersBangalore");
 	}
-	/*------royal challenge player function------*/
+	------royal challenge player function------
 	public ArrayList<PlayerDto> royalChallengesPlayerList()
 	{
 		System.out.println("rcb list while be display shortly");
 		return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/RoyalChallenges.json","RoyalChallengePlayerList","RoyalChallengersBangalore");
 	}
-	/*Sunrise Hydrabad Team function */
+	Sunrise Hydrabad Team function 
 	public ArrayList<TeamDto> sunriseHydrabadTeam() 
 	{
 		System.out.println("SunrisersHyderabadTeamList while be display shortly");
 		return insertTeamDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLIndividualTeamInfo/SunriseHydrabad.json","SunrisersHyderabadTeamList","SunrisersHyderabad");			
 	}
-	/*------Sunrise hydrabad player function------*/
+	------Sunrise hydrabad player function------
 	public ArrayList<PlayerDto> sunriseHydrabadPlayerList() 
 	{
 			System.out.println("sunriseHydrabadPlayerList while be display shortly");
 			return insertPlayerDetails("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLPlayer/SunriseHydrabad.json","SunriserHyderabadPlayerList","SunriserHyderabad");
-	}
+	}*/
 	/*converting json string data to date format of data */
 	public Date stringToDate(String abc){
 		DateFormat formatter = new SimpleDateFormat("dd-MMMM-yyyy");
@@ -326,55 +325,14 @@ public class JsonControllerDaoImpl implements JsonDao {
 		return (ArrayList<?>) list;
 		}
 	}
-	/* Read the IPL team names from JSON file*/
-	public ArrayList<IplTeams> IPLTeamList() {
-		System.out.println("IPL team list while be display shortly");
-				
-				ArrayList<IplTeams> playerList=new ArrayList<IplTeams>();
-		        JSONParser parser= new JSONParser();
-		        
-		        try {
-		        	
-		        	FileReader fileread=new FileReader("/home/bridgeit/Documents/IPL_Project_Json_View/src/main/jsonfile/IPLTeams/IplTeams.json");
-		        	
-		        	Object obj=parser.parse(fileread);
-		        	JSONArray array =(JSONArray)obj;
-		        	
-		        	for (int i = 0; i < array.size(); i++) {
-						JSONObject jsonObject=(JSONObject)array.get(i);
-						jsonObject.get("Name").toString();
-						JSONArray jsonArray=(JSONArray)jsonObject.get("IPLTeamList");
-						
-						for (int j = 0; j < jsonArray.size(); j++) {
-							IplTeams team=new IplTeams();
-							JSONObject jsonObjectArray=(JSONObject)jsonArray.get(j);
-							team.setDDname(jsonObjectArray.get("DDteam_name").toString());
-							team.setGLname(jsonObjectArray.get("GLteam_name").toString());
-							team.setKXIPname(jsonObjectArray.get("KXIPteam_name").toString());
-							team.setKKRname(jsonObjectArray.get("KKRteam_name").toString());
-							team.setMIname(jsonObjectArray.get("MIteam_name").toString());
-							team.setRPSname(jsonObjectArray.get("RPSteam_name").toString());
-							team.setRCBname(jsonObjectArray.get("RCBteam_name").toString());
-							team.setSHname(jsonObjectArray.get("SHteam_name").toString());
-							playerList.add(team);
-							try
-							{
-					 			Session session = sessionFactory.openSession();
-					 			Transaction tx = session.beginTransaction();
-				                session.save(team);
-				                tx.commit();
-				                session.close();
-							}catch(Exception e)
-							{
-								e.printStackTrace();
-							}
-						}
-		        	}
-		        }
-		        	catch (Exception e) {
-		        		System.out.println("error");
-		        	}
-				return playerList;
-			
-			}
+	/* this method take from url of all team info and player info match */
+	public ArrayList<?> player_Info(String teamname) 
+	{
+		System.out.println("player team name 1 :"+teamname);
+		return insertPlayerDetails(teamname);
+	}
+	public ArrayList<?> team_Info(String teamname) {
+		System.out.println("team name :"+teamname);
+		return insertTeamDetails(teamname);
+	}
 }

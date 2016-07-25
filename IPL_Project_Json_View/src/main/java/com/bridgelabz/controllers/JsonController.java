@@ -7,14 +7,13 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
-
-import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -36,11 +35,9 @@ public class JsonController implements HandlerExceptionResolver
 {
 		//the @Autowired annotation tells Spring where an injection needs to occur.
 		@Autowired
-		private JsonDao play;
+		public JsonDao play;
 		@Autowired
-		public SessionFactory sessionfactory;
-		@Autowired
-		private LoginService loginService;
+		public LoginService loginService;
 		@Autowired
 		public  RegistrationValidation registrationValidation;
 		/* here matching with respective url pattern and open their respective view pages*/ 
@@ -103,7 +100,6 @@ public class JsonController implements HandlerExceptionResolver
 			this.registrationValidation = registrationValidation;
 		}
 		// Display the form on the get request
-		@SuppressWarnings("unchecked")
 		@RequestMapping(value="registrationform.html",method = RequestMethod.GET)
 		public ModelAndView showRegistration() {
 			Map<String, Object> model = new HashMap<String, Object>();
@@ -155,6 +151,26 @@ public class JsonController implements HandlerExceptionResolver
 			user.setId(null);
 			return user;
 		}
+		@RequestMapping(value="teamname/{each_team_player_info}",method=RequestMethod.GET,headers="Accept=application/json")
+		public String eachTeamDetails(@PathVariable("each_team_player_info") String teamname )throws IOException
+		{
+			System.out.println("player team name url match here");
+			@SuppressWarnings("rawtypes")
+			ArrayList playersteam=new ArrayList();
+			playersteam=play.player_Info(teamname);
+			ObjectMapper mapper = new ObjectMapper();
+			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString( playersteam);	
+		}
+		@RequestMapping(value="teamnameinfo/{each_team_info}",method=RequestMethod.GET,headers="Accept=application/json")
+		public String allplayerdetails(@PathVariable("each_team_info")String teamname)throws IOException
+		{
+			System.out.println("team name url match here");
+			@SuppressWarnings("rawtypes")
+			ArrayList playersteam=new ArrayList();
+			playersteam=play.team_Info(teamname);
+			ObjectMapper mapper = new ObjectMapper();
+			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString( playersteam);	
+		}
 		/* exception handling code */
 		@RequestMapping(method = RequestMethod.GET)
 	    public ResponseEntity<Object> get(){
@@ -178,160 +194,5 @@ public class JsonController implements HandlerExceptionResolver
 	        }
 	        return model;
 	    }
-	    @RequestMapping(value="/iplteamslist",method = RequestMethod.GET)
-		public String IPLTeamList()throws IOException
-		{
-			   ArrayList<?> teamlist=new ArrayList<Object>();
-			   System.out.println("ipl team url match");
-			   teamlist=play.IPLTeamList();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		//--------display the Delhi DareDevils team list-------- 
-		@RequestMapping(value="ddteamview",method = RequestMethod.GET,produces="application/json")
-		public String DDTeamList()throws IOException
-		{
-			   ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.delhiDareDevilsTeamList();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------display the DDplayer list demo------*/
-		@RequestMapping(value="ddplayerview",method = RequestMethod.GET,produces="application/json")
-		public String DDplayerList()throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.delhiDareDevilsPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		/*--------display the Gujrat Lions team list-------- */
-		@RequestMapping(value="glteamview",method = RequestMethod.GET,produces="application/json")
-		public String gujratTeamList()throws IOException
-		{
-			   ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.gujratTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the Gujrat Lion PlayerList-------*/
-		@RequestMapping(value="glplayerview",method = RequestMethod.GET,produces="application/json")
-		public String gujratPlayerList() throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.gujratPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		/*--------display the punjab team list-------- */
-		@RequestMapping(value="kxipteamview",method = RequestMethod.GET,produces="application/json")
-		public String kpTeamList()throws IOException
-		{
-			   ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.punjabTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the KP  PlayerList-------*/
-		@RequestMapping(value="kxiplayerview",method = RequestMethod.GET,produces="application/json")
-		public String punjabPlayerList()throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.punjabPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		
-		/*--------display the KKR team list--------*/
-		@RequestMapping(value="kkrteamview",method = RequestMethod.GET,produces="application/json")
-		public String kkrTeamList()throws IOException
-		{
-				ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.kkrTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the KKr  PlayerList-------*/
-		@RequestMapping(value="kkrplayerview",method = RequestMethod.GET,produces="application/json")
-		public String kkrPlayerList() throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.kkrPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		/*--------display the Mumbai indians team list--------*/
-		@RequestMapping(value="mumbaiteamview",method = RequestMethod.GET,produces="application/json")
-		public String mumbaiTeamList()throws IOException
-		{
-				ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.mumbaiIndiansTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the mumbai indians PlayerList-------*/
-		@RequestMapping(value="mumbaiplayerview",method = RequestMethod.GET,produces="application/json")
-		public String mumbaiPlayerList() throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.mumbaiPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		/*--------display the Rising pune team list--------*/
-		@RequestMapping(value="puneteamview",method = RequestMethod.GET,produces="application/json")
-		public String puneTeamList(Model model)throws IOException
-		{
-				ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.risingPuneTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the rising pune PlayerList-------*/
-		@RequestMapping(value="puneplayerview",method = RequestMethod.GET,produces="application/json")
-		public String punePlayerList()throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.risingPunePlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-			
-		}
-		/*--------display the royal challenges team list--------*/
-		@RequestMapping(value="rcbteamview",method = RequestMethod.GET,produces="application/json")
-		public String rcbTeamList()throws IOException
-		{
-				ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.royalChallengesTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the royal challenges PlayerList-------*/
-		@RequestMapping(value="rcbplayerview",method = RequestMethod.GET,produces="application/json")
-		public String rcbPlayerList()throws IOException
-		{
-			 ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.royalChallengesPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
-		/*--------display the sunrise hydrabad team list--------*/
-		@RequestMapping(value="sunriseteamview",method = RequestMethod.GET,produces="application/json")
-		public String sunriseTeamList() throws IOException
-		{
-			ArrayList<?> teamlist=new ArrayList<Object>();
-			   teamlist=play.sunriseHydrabadTeam();
-			   ObjectMapper mapper = new ObjectMapper();
-			   return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(teamlist);
-		}
-		/*------ display the sunrise hydrabad PlayerList-------*/
-		@RequestMapping(value="sunriseplayerview",method = RequestMethod.GET,produces="application/json")
-		public String sunrisesPlayerList() throws IOException
-		{
-			ArrayList<?> playerlist=new ArrayList<Object>();
-			 playerlist=play.sunriseHydrabadPlayerList();
-			ObjectMapper mapper = new ObjectMapper();
-			return mapper.writerWithDefaultPrettyPrinter().writeValueAsString(playerlist);
-		}
 	}
 	

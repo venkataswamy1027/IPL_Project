@@ -26,7 +26,7 @@
 <body>
 	<div id="back_glob">
 	<div id="back_header">
-	<b style="color:blue">IPL 2016 REGISTRATION FORM</b>
+	<b style="color:black">IPL 2016 REGISTRATION FORM</b>
 	</div>
 	<a href="loginform.html" class="button button1">Sign In</a><br>
 	<a href="registrationform.html" class="button button2">Sign Up</a>

@@ -1,0 +1,192 @@
+[
+{
+  "Name": "DelhiDereDevils",
+  "DelhiDereDevilsPlayerList":
+  [
+  {
+    "player_name": "Akhil Herwadkar",
+    "player_role": "Batsman",
+    "player_batting_style": "left_handed",
+    "player_bowling_style": "Off-spin and medium pace",
+    "player_nationality": "Indian",
+    "player_dob": "31-October-1994"
+  },
+  {
+    "player_name": "Amit Mishra",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm leg spin",
+    "player_nationality": "Indian",
+    "player_dob": "24-November-1982"
+  },
+  {
+    "player_name": "Carlos Barathwaite",
+    "player_role": "All-rounder",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm fast-medium",
+    "player_nationality": "West Indian",
+    "player_dob": "18-July-1988"
+  },
+  {
+    "player_name": "Chama Milind",
+    "player_role": "Bowler",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "04-September-1994"
+  },
+  {
+    "player_name": "Imran Tahir",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Leg-spinner",
+    "player_nationality": "South African",
+    "player_dob": "27-March-1979"
+  },
+  {
+    "player_name": "Jayant Yadav",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "Indian",
+    "player_dob": "22-January-1990"
+  },
+  {
+    "player_name": "J P Duminy",
+    "player_role": "Batting All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "South African",
+    "player_dob": "14-April-1984"
+  },
+  {
+    "player_name": "Karun Nair",
+    "player_role": "Batting All-rounder",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "Indian",
+    "player_dob": "06-December-1991"
+  },
+  {
+    "player_name": "Khaleel Ahemed",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Left-arm medium pace",
+    "player_nationality": "Indian",
+    "player_dob": "05-December-1997"
+  },
+  {
+    "player_name": "Mahipal Lomor",
+    "player_role": "All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm spin",
+    "player_nationality": "Indian",
+    "player_dob": "16-November-1999"
+  },
+  {
+    "player_name": "Mayank Agarwal",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "Indian",
+    "player_dob": "18-February-1991"
+  },
+  {
+    "player_name": "Mohammed Shami",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "09-March-1990"
+  },
+  {
+    "player_name": "Nathan Coulter-Nile",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm fast",
+    "player_nationality": "Australian",
+    "player_dob": "11-October-1987"
+  },
+  {
+    "player_name": "Pawan Negi",
+    "player_role": "Bowling All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm orthodox spin",
+    "player_nationality": "Indian",
+    "player_dob": "06-January-1983"
+  },
+  {
+    "player_name": "Pawan Suyal",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Left-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "15-October-1989"
+  },
+  {
+    "player_name": "Pratyush Singh",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm leg-break",
+    "player_nationality": "Indian",
+    "player_dob": "04-September-1994"
+  },
+  {
+    "player_name": "Quinton de Kock",
+    "player_role": "Wicketkeeper batsman",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "South African",
+    "player_dob": "17-December-1992"
+  },
+  {
+    "player_name": "Rishabh Pant",
+    "player_role": "Wicketkeeper-batsman",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Right-arm leg-break",
+    "player_nationality": "Indian",
+    "player_dob": "04-October-1997"
+  },
+  {
+    "player_name": "Sam Billings",
+    "player_role": "Wicketkeeper Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "English",
+    "player_dob": "15-June-1991"
+  },
+  {
+    "player_name": "Sanju Samson",
+    "player_role": "Wicketkeeper Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "Indian",
+    "player_dob": "11-November-1994"
+  },
+  {
+    "player_name": "Shahbaz Nadeem",
+    "player_role": "Bowler",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm orthodox spin",
+    "player_nationality": "Indian",
+    "player_dob": "12-August-1989"
+  },
+  {
+    "player_name": "Shreyas Iyer",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm off-break",
+    "player_nationality": "Indian",
+    "player_dob": "06-December-1994"
+  },
+  {
+    "player_name": "Zaheer Khan",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Left-arm medium fast",
+    "player_nationality": "Indian",
+    "player_dob": "07-October-1978"
+  }
+]
+}
+]
