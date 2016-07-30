@@ -1,0 +1,17 @@
+[
+	{
+  	"Name": "IPLTeams",
+  	"IPLTeamList":[
+  		{
+    	"DDteam_name": "Delhi Daredevils",
+    	"GLteam_name": "Gujarat Lions",
+    	"KXIPteam_name": "Kings XI Punjab",
+    	"KKRteam_name": "Kolkata Knight Riders",
+    	"MIteam_name": "Mumbai Indians",
+    	"RPSteam_name": "Rising Pune Supergiants",
+    	"RCBteam_name": "Royal Challengers Bangalore",
+    	"SHteam_name": "Sunrisers Hyderabad"
+  		}
+  		]
+  	}
+ ]

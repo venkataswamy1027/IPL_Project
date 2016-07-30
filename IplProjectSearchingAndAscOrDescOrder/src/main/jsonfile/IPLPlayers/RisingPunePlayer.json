@@ -1,0 +1,224 @@
+[
+{
+	"Name": "Rising Pune List",
+	"PunePlayerList":
+	[
+	{
+   "player_name": "MS Dhoni",
+   "player_role": "Wicketkeeper batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "07-July-1981"
+ },
+ {
+   "player_name": "Ankit Sharma",
+   "player_role": "Bowling All-rounder",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Left-arm orthodox spin",
+   "player_nationality": "Indian",
+   "player_dob": "20-April-1991"
+ },
+ {
+   "player_name": "Baba Aparajith",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm offbreak",
+   "player_nationality": "Indian",
+   "player_dob": "08-July-1994"
+ },
+ {
+   "player_name": "Ravichandran Ashwin",
+   "player_role": "Bowling All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "Indian",
+   "player_dob": "17-September-1986"
+ },
+ {
+   "player_name": "Murugan Ashwin",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Legbreak googly",
+   "player_nationality": "Indian",
+   "player_dob": "08-September-1990"
+ },
+ {
+   "player_name": "Ankush Bains",
+   "player_role": "Wicketkeeper batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Indian",
+   "player_dob": "16-December-1995"
+ },
+ {
+   "player_name": "Rajat Bhatia",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "22-October-1979"
+ },
+ {
+   "player_name": "Scott Boland",
+   "player_role": "Batting",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm fast-medium",
+   "player_nationality": "Australian",
+   "player_dob": "11-April-1989"
+ },
+ {
+   "player_name": "Deepak Chahar",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "07-August-1992"
+ },
+ {
+   "player_name": "Ashok Dinda",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "25-March-1984"
+ },
+ {
+   "player_name": "Francois du Plessis",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm leg spin",
+   "player_nationality": "South African",
+   "player_dob": "13-July-1984"
+ },
+ {
+   "player_name": "Peter Handscomb",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Australian",
+   "player_dob": "26-April-1991"
+ },
+ {
+   "player_name": "Jaskaran Singh",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "04-September-1989"
+ },
+ {
+   "player_name": "Mitchell Marsh",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Australian",
+   "player_dob": "20-October-1991"
+ },
+ {
+   "player_name": "Albie Morkel",
+   "player_role": "All-rounder",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "South African",
+   "player_dob": "10-June-1981"
+ },
+ {
+   "player_name": "Ishwar Pandey",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "15-August-1989"
+ },
+ {
+   "player_name": "Irfan Pathan",
+   "player_role": "All-rounder",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Left-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "27-October-1984"
+ },
+ {
+   "player_name": "Thisara Perera",
+   "player_role": "All-rounder",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Sri Lankan",
+   "player_dob": "03-April-1989"
+ },
+ {
+   "player_name": "Kevin Pietersen",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "English",
+   "player_dob": "27-June-1980"
+ },
+ {
+   "player_name": "Ajinkya Rahane",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "06-June-1988"
+ },
+ {
+   "player_name": "Ishant Sharma",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "02-September-1988"
+ },
+ {
+   "player_name": "RP Singh",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Left-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "06-December-1985"
+ },
+ {
+   "player_name": "Steve Smith",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm leg spin",
+   "player_nationality": "Australian",
+   "player_dob": "02-June-1989"
+ },
+ {
+   "player_name": "Saurabh Tiwary",
+   "player_role": "Batsman",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Indian",
+   "player_dob": "30-December-1989"
+ },
+ {
+   "player_name": "Adam Zampa",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Legbreak googly",
+   "player_nationality": "Australian",
+   "player_dob": "31-March-1992"
+ },
+ {
+   "player_name": "Usman Khawaja",
+   "player_role": "Batsman",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Australian",
+   "player_dob": "18-December-1986"
+ },
+ {
+   "player_name": "George Bailey",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Australian",
+   "player_dob": "07-September-1982"
+ }
+	]
+}
+]

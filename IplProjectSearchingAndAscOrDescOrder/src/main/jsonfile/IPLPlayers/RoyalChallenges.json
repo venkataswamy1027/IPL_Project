@@ -1,0 +1,240 @@
+[
+{
+	"Name": "Royal Challenge List",
+	"RoyalChallengePlayerList":
+	[
+	{
+   "player_name": "Virat Kohli",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "05-November-1988"
+ },
+ {
+   "player_name": "Varun Aaron",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm fast",
+   "player_nationality": "Indian",
+   "player_dob": "29-October-1989"
+ },
+ {
+   "player_name": "Abu Nechim",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "05-November-1988"
+ },
+ {
+   "player_name": "Sreenath Aravind",
+   "player_role": "Bowler",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Left-arm medium fast",
+   "player_nationality": "Indian",
+   "player_dob": "08-April-1984"
+ },
+ {
+   "player_name": "Samuel Badree",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm leg spin",
+   "player_nationality": "West Indian",
+   "player_dob": "09-March-1981"
+ },
+ {
+   "player_name": "Stuart Binny",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "03-June-1984"
+ },
+ {
+   "player_name": "Yuzvendra Chahal",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm leg spin",
+   "player_nationality": "Indian",
+   "player_dob": "23-July-1990"
+ },
+ {
+   "player_name": "AB de Villiers",
+   "player_role": "Wicketkeeper batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "17-February-1984"
+ },
+ {
+   "player_name": "Praveen Dubey",
+   "player_role": "Bowling all-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Indian",
+   "player_dob": "01-July-1993"
+ },
+ {
+   "player_name": "Chris Gayle",
+   "player_role": "All-rounder",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "West Indian",
+   "player_dob": "21-September-1979"
+ },
+ {
+   "player_name": "Travis Head",
+   "player_role": "Batsman",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right-arm off-break",
+   "player_nationality": "Australian",
+   "player_dob": "29-December-1993"
+ },
+ {
+   "player_name": "Iqbal Abdulla",
+   "player_role": "Bowler",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Left-arm orthodox spin",
+   "player_nationality": "Indian",
+   "player_dob": "02-December-1989"
+ },
+ {
+   "player_name": "Kedar Jadhav",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "Indian",
+   "player_dob": "26-March-1985"
+ },
+ {
+   "player_name": "Akshay Karnewar",
+   "player_role": "Bowling",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right arm off spin",
+   "player_nationality": "Indian",
+   "player_dob": "12-October-1992"
+ },
+ {
+   "player_name": "Sarfaraz Khan",
+   "player_role": "Batsman",
+   "player_batting_style": "Right-hand",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "Indian",
+   "player_dob": "22-October-1997"
+ },
+ {
+   "player_name": "Vikramjeet Malik",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "09-May-1983"
+ },
+ {
+   "player_name": "Mandeep Singh",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "18-December-1991"
+ },
+ {
+   "player_name": "Adam Milne",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm fast",
+   "player_nationality": "New Zealander",
+   "player_dob": "13-April-1992"
+ },
+ {
+   "player_name": "Harshal Patel",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "23-November-1990"
+ },
+ {
+   "player_name": "Lokesh Rahul",
+   "player_role": "Wicketkeeper Batsman",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "-",
+   "player_nationality": "Indian",
+   "player_dob": "18-April-1992"
+ },
+ {
+   "player_name": "Parveez Rasool",
+   "player_role": "Bowling All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "Indian",
+   "player_dob": "13-February-1989"
+ },
+ {
+   "player_name": "Kane Richardson",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Australian",
+   "player_dob": "12-February-1991"
+ },
+ {
+   "player_name": "Sachin Baby",
+   "player_role": "Batsman",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Right-arm off-spin",
+   "player_nationality": "Indian",
+   "player_dob": "18-December-1988"
+ },
+ {
+   "player_name": "Mitchell Starc",
+   "player_role": "Bowler",
+   "player_batting_style": "Left-handed",
+   "player_bowling_style": "Left-arm fast-medium",
+   "player_nationality": "Australian",
+   "player_dob": "30-January-1990"
+ },
+ {
+   "player_name": "Vikas Tokas",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium",
+   "player_nationality": "Indian",
+   "player_dob": "16-October-1986"
+ },
+ {
+   "player_name": "Shane Watson",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-handed",
+   "player_bowling_style": "Right-arm medium fast",
+   "player_nationality": "Australian",
+   "player_dob": "17-June-1981"
+ },
+ {
+   "player_name": "David Wiese",
+   "player_role": "All-rounder",
+   "player_batting_style": "Right-hand",
+   "player_bowling_style": "Right-arm medium-fast",
+   "player_nationality": "South African",
+   "player_dob": "18-May-1985"
+ },
+ {
+   "player_name": "Tabraiz Shazmi",
+   "player_role": "Bowler",
+   "player_batting_style": "-",
+   "player_bowling_style": "Left-Arm Chinaman",
+   "player_nationality": "South African",
+   "player_dob": "18-February-1990"
+ },
+ {
+   "player_name": "Chris Jordan",
+   "player_role": "Bowler",
+   "player_batting_style": "Right-hand",
+   "player_bowling_style": "Right-arm fast",
+   "player_nationality": "English",
+   "player_dob": "04-October-1988"
+ }
+	]
+}
+]

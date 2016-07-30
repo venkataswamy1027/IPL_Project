@@ -1,0 +1,192 @@
+[
+{
+	"Name": "Sunrise Hydrabad List",
+	"SunRiseHydrabadPlayerList":
+	[
+	{
+    "player_name": "David Warner",
+    "player_role": "Batsman",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Right-arm leg spin",
+    "player_nationality": "Australian",
+    "player_dob": "27-October-1986"
+  },
+  {
+    "player_name": "Ashish Reddy",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "24-February-1981"
+  },
+  {
+    "player_name": "Ricky Bhui",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm leg spin",
+    "player_nationality": "Indian",
+    "player_dob": "29-September-1996"
+  },
+  {
+    "player_name": "Bipul Sharma",
+    "player_role": "All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm orthodox spin",
+    "player_nationality": "Indian",
+    "player_dob": "28-September-1983"
+  },
+  {
+    "player_name": "Trent Boult",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-hand",
+    "player_bowling_style": "Left-arm fast-medium",
+    "player_nationality": "New Zealander",
+    "player_dob": "22-July-1989"
+  },
+  {
+    "player_name": "Ben Cutting",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm fast-medium",
+    "player_nationality": "Australian",
+    "player_dob": "30-January-1987"
+  },
+  {
+    "player_name": "Shikhar Dhawan",
+    "player_role": "Batsman",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "Indian",
+    "player_dob": "05-December-1985"
+  },
+  {
+    "player_name": "Moises Henriques",
+    "player_role": "All-rounder",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium fast",
+    "player_nationality": "Australian",
+    "player_dob": "01-February-1987"
+  },
+  {
+    "player_name": "Deepak Hooda",
+    "player_role": "Bowling All-rounder",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "Indian",
+    "player_dob": "19-April-1995"
+  },
+  {
+    "player_name": "Siddarth Kaul",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium fast",
+    "player_nationality": "Indian",
+    "player_dob": "19-May-1990"
+  },
+  {
+    "player_name": "Bhuvneshwar Kumar",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "05-December-1990"
+  },
+  {
+    "player_name": "Abhimanyu Mithun",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm medium fast",
+    "player_nationality": "Indian",
+    "player_dob": "25-October-1989"
+  },
+  {
+    "player_name": "Eoin Morgan",
+    "player_role": "Batsman",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Right-arm medium",
+    "player_nationality": "English",
+    "player_dob": "10-September-1986"
+  },
+  {
+    "player_name": "Mustafizur Rahman",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Left-arm fast",
+    "player_nationality": "Bangladeshi",
+    "player_dob": "06-September-1995"
+  },
+  {
+    "player_name": "Ashish Nehra",
+    "player_role": "Bowler",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Left-arm medium fast",
+    "player_nationality": "Indian",
+    "player_dob": "29-April-1979"
+  },
+  {
+    "player_name": "Naman Ojha",
+    "player_role": "Wicketkeeper batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "Indian",
+    "player_dob": "20-July-1983"
+  },
+  {
+    "player_name": "Vijay Shankar",
+    "player_role": "All-rounder",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm offbreak",
+    "player_nationality": "Indian",
+    "player_dob": "26-January-1991"
+  },
+  {
+    "player_name": "Karn Sharma",
+    "player_role": "All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Right-arm leg spin",
+    "player_nationality": "Indian",
+    "player_dob": "23-October-1987"
+  },
+  {
+    "player_name": "Barinder Sran",
+    "player_role": "Bowler",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm medium",
+    "player_nationality": "Indian",
+    "player_dob": "10-December-1992"
+  },
+  {
+    "player_name": "Tirumalasetti Suman",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "Indian",
+    "player_dob": "15-December-1983"
+  },
+  {
+    "player_name": "Aditya Tare",
+    "player_role": "Wicketkeeper Batsman",
+    "player_batting_style": "Right-handed",
+    "player_bowling_style": "-",
+    "player_nationality": "Indian",
+    "player_dob": "07-November-1987"
+  },
+  {
+    "player_name": "Kane Williamson",
+    "player_role": "Batsman",
+    "player_batting_style": "Right-hand",
+    "player_bowling_style": "Right-arm off-spin",
+    "player_nationality": "New Zealander",
+    "player_dob": "08-August-1990"
+  },
+  {
+    "player_name": "Yuvraj Singh",
+    "player_role": "All-rounder",
+    "player_batting_style": "Left-handed",
+    "player_bowling_style": "Left-arm orthodox spin",
+    "player_nationality": "Indian",
+    "player_dob": "12-December-1981"
+  }
+	]
+}
+]
